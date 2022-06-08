@@ -4,3 +4,7 @@ pandas
 sqlalchemy
 vaderSentiment
 wordcloud
+datetime
+altair
+requests
+streamlit_plotly_events
