@@ -9,6 +9,7 @@ from wordclouder import *
 import streamlit.components.v1 as components
 import requests
 from streamlit_plotly_events import plotly_events
+from zipfile import ZipFile
 
 #@st.experimental_memo
 #@st.cache(allow_output_mutation=True, show_spinner=False)
@@ -143,7 +144,10 @@ st.write(
 	
 #data, timestamp = get_data()
 
-csv_file = 'climatechange_AprMay22.csv'
+#with ZipFile("climatechange_AprMay22.zip") as myzip:
+    #csv_file = myzip.open("climatechange_AprMay22.csv")
+csv_file = 'climatechange_AprMay22.zip'
+#csv_file = 'climatechange_AprMay22.csv'
 data, timestamp = get_data_csv(csv_file)
 
 date_options = data.Timestamp.dt.date.unique()
