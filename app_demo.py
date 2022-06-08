@@ -123,9 +123,9 @@ def get_embed_codes(tid):
 
 st.set_page_config(layout="wide", page_title='Climate Change Tweets')
 col1, mid, col2 = st.columns([3,1,3])
-col1.image("images/ACCESS22.png")
+col1.image("/images/ACCESS22.png")
 mid.write(" ")
-col2.image("images/ESRC_logo.png")
+col2.image("/images/ESRC_logo.png")
 st.write(
     """Welcome to the [ACCESS project](https://greenfutures.exeter.ac.uk/access/) social media tracker, 
      which provides a visualisation of social media discussion on environmental issues, such as climate change and net zero.
